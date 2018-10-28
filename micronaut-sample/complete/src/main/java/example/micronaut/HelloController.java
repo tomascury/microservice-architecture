@@ -14,7 +14,7 @@ import io.swagger.v3.oas.annotations.tags.Tag;
 
 import javax.validation.constraints.NotBlank;
 
-@Controller("/")
+@Controller("/hello/")
 @Validated
 public class HelloController implements HelloOperations {
 
@@ -22,7 +22,7 @@ public class HelloController implements HelloOperations {
      * @param name The person's name
      * @return The greeting
      */
-    @Get(uri = "/hello/{name}", produces = MediaType.TEXT_PLAIN)
+    @Get(uri = "/{name}", produces = MediaType.TEXT_PLAIN)
     @Operation(summary = "Greets a person",
             description = "A friendly greeting is returned"
     )
