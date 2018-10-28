@@ -11,8 +11,8 @@ import io.swagger.v3.oas.annotations.info.License;
                 title = "Hello World",
                 version = "0.0",
                 description = "My API",
-                license = @License(name = "Apache 2.0", url = "http://foo.bar"),
-                contact = @Contact(url = "http://gigantic-server.com", name = "Fred", email = "Fred@gigagantic-server.com")
+                license = @License(name = "Apache 2.0", url = "https://www.apache.org/licenses/LICENSE-2.0"),
+                contact = @Contact(url = "https://github.com/tomascury", name = "Tomas")
         )
 )
 public class Application {
