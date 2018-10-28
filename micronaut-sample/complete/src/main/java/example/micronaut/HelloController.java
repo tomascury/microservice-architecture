@@ -16,7 +16,7 @@ import javax.validation.constraints.NotBlank;
 
 @Controller("/")
 @Validated
-public class HelloController {
+public class HelloController implements HelloOperations {
 
     /**
      * @param name The person's name
@@ -34,6 +34,6 @@ public class HelloController {
     @ApiResponse(responseCode = "404", description = "Person not found")
     @Tag(name = "greeting")
     public Single<String> hello(@Parameter(description = "The name of the person") @NotBlank String name) {
-        return Single.just("Hello " + name + "!");
+        return Single.just("Hello, " + name + "!");
     }
 }
